@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCAS — A marketplace closing the gap between apprenticeships and students</title>
+  <meta name="description" content="UCAS is a live marketplace connecting UK students with apprenticeship employers, with tools that close the gap between opportunity and motivated talent.">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page-load choreography: orchestrate hero entrance, skipped under reduced motion */
+    @keyframes heroEnter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    /* Removed .hero-centered__kicker from animation for fix #2 */
+    .hero-centered__headline,
+    .hero-centered__sub,
+    .hero-centered__ctas {
+      opacity: 1;
+      animation: heroEnter 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    }
+    /* Adjusted animation-delays due to removal of kicker for fix #2 */
+    .hero-centered__headline { animation-delay: 0.05s; } /* Was 0.12s */
+    .hero-centered__sub      { animation-delay: 0.12s; } /* Was 0.20s */
+    .hero-centered__ctas     { animation-delay: 0.20s; } /* Was 0.28s */
+    @media (prefers-reduced-motion: reduce) {
+      .hero-centered__headline,
+      .hero-centered__sub,
+      .hero-centered__ctas { animation: none; }
+    }
+  </style>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="UCAS">
+  <meta property="og:description" content="UCAS is a live marketplace connecting UK students with apprenticeship employers, with tools that close the gap between opportunity and motivated talent.">
+  <meta property="og:image" content="https://git-foundry.github.io/ucas-0001/og-image.png">
+  <meta property="og:url" content="https://git-foundry.github.io/ucas-0001/index.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">U</span>
+        <span>UCAS</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <div class="nav__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a class="btn btn--primary nav__cta" href="contact.html">See the deck</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. hero-centered -->
+    <section class="hero-centered">
+      <div class="container hero-centered__inner">
+        <!-- Fix #2: Removed hero-centered__kicker -->
+        <h1 class="hero-centered__headline">A marketplace closing the gap between apprenticeships and students</h1>
+        <p class="hero-centered__sub">Live tools that put apprenticeship opportunities in front of students while giving business owners a direct, accountable pipeline of candidates.</p>
+        <div class="hero-centered__ctas">
+          <a href="#contact" class="btn btn--primary">See the deck</a>
+          <a href="#services" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. problem-solution -->
+    <section class="problem-solution">
+      <div class="container problem-solution__inner">
+        <div>
+          <!-- Fix #3: Changed all-caps label to normal case -->
+          <p class="problem-solution__label">The problem</p>
+          <h2 class="problem-solution__headline">Too many students never hear about apprenticeships until it is too late</h2>
+          <p class="problem-solution__body">Employers who offer apprenticeships struggle to reach the people who would benefit most. The routes that already exist list them alongside every other role, and students only hear about the opportunity after the window has closed.</p>
+        </div>
+        <div>
+          <!-- Fix #3: Changed all-caps label to normal case -->
+          <p class="problem-solution__label">The fix</p>
+          <h3 class="problem-solution__product">A dedicated marketplace where students and business owners connect directly</h3>
+          <p class="problem-solution__body">We give students clear, early visibility of real opportunities and give business owners a direct route to motivated candidates. The platform is live, and we are now scaling the tools on both sides of the match.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. how-it-works -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="how-it-works__title">How it works</h2>
+        <ol class="how-it-works__steps">
+          <li class="how-step">
+            <span class="how-step__num" aria-hidden="true">1</span>
+            <h3 class="how-step__heading">Discover</h3>
+            <p class="how-step__desc">Students find apprenticeship opportunities matched to their interests and region through a curated feed.</p>
+          </li>
+          <li class="how-step">
+            <span class="how-step__num" aria-hidden="true">2</span>
+            <h3 class="how-step__heading">Match</h3>
+            <p class="how-step__desc">Employers receive student profiles ranked by intent and relevance, then shortlist candidates.</p>
+          </li>
+          <li class="how-step">
+            <span class="how-step__num" aria-hidden="true">3</span>
+            <h3 class="how-step__heading">Connect</h3>
+            <p class="how-step__desc">Both parties communicate directly through the platform to begin the application conversation.</p>
+          </li>
+          <li class="how-step">
+            <span class="how-step__num" aria-hidden="true">4</span>
+            <h3 class="how-step__heading">Track</h3>
+            <p class="how-step__desc">Employers monitor listing performance and adjust in real time based on first-party analytics.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. features-list -->
+    <section class="features-list">
+      <div class="container">
+        <h2 class="features-list__title">What the platform does</h2>
+        <ol class="features-list__items">
+          <li class="features-list__item">
+            <span class="features-list__num" aria-hidden="true">01</span>
+            <div class="features-list__body">
+              <h3 class="features-list__name">Apprenticeship discovery feed</h3>
+              <p class="features-list__desc">Students browse apprenticeship openings curated by location, sector, and skill level. Each listing links directly to the employer's application process with no intermediary. Business owners control their own listings through a self-serve dashboard.</p>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <span class="features-list__num" aria-hidden="true">02</span>
+            <div class="features-list__body">
+              <h3 class="features-list__name">Employer matching tools</h3>
+              <p class="features-list__desc">Business owners receive matched student profiles based on stated interests, qualifications, and location. The matching engine prioritises intent signals — saved listings, sector preferences — over passive browsing data. Employers can shortlist and initiate contact through the platform.</p>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <span class="features-list__num" aria-hidden="true">03</span>
+            <div class="features-list__body">
+              <h3 class="features-list__name">Student profile builder</h3>
+              <p class="features-list__desc">Students create structured profiles that surface their strengths to relevant employers without requiring a traditional CV upload. The builder guides them through qualifications, interests, and career goals in plain language. Profiles remain editable and portable across applications.</p>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <span class="features-list__num" aria-hidden="true">04</span>
+            <div class="features-list__body">
+              <h3 class="features-list__name">Analytics for employers</h3>
+              <p class="features-list__desc">Employers see views, saves, and application starts for each listing in real time. The dashboard benchmarks performance against sector averages so owners can adjust timing or descriptions. All data is first-party and visible only to the listing owner.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. traction -->
+    <section class="traction">
+      <div class="container traction__inner">
+        <h2 class="traction__title">Why this is ready to scale</h2>
+        <div class="traction-item">
+          <span class="traction-item__value">Live</span>
+          <!-- Fix #8: Changed all-caps label to normal case -->
+          <span class="traction-item__label">Marketplace is live and accepting registrations</span>
+        </div>
+        <div class="traction-item">
+          <span class="traction-item__value">Schools</span>
+          <!-- Fix #9: Changed all-caps label to normal case -->
+          <span class="traction-item__label">Integrates with school and college careers services</span>
+        </div>
+        <div class="traction-item">
+          <span class="traction-item__value">1st-party</span>
+          <!-- Fix #10: Changed all-caps label to normal case -->
+          <span class="traction-item__label">First-party data infrastructure – no third-party tracking</span>
+        </div>
+        <div class="traction-item">
+          <span class="traction-item__value">UK-built</span>
+          <!-- Fix #11: Changed all-caps label to normal case -->
+          <span class="traction-item__label">Built specifically for UK apprenticeship market</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. founder-story -->
+    <section class="founder-story">
+      <div class="container founder-story__inner">
+        <div class="founder-story__text">
+          <h2 class="founder-story__title">Why this is being built, and why now</h2>
+          <!-- Fix #1: Rewrote 'Founder Story' content to offer unique perspective -->
+          <p class="founder-story__body">The seed of UCAS was planted years ago, observing firsthand the frustration both students and employers faced. I saw bright, motivated young people unaware of the incredible pathways apprenticeships offered, and committed businesses struggling to connect with the very talent they desperately needed. It was clear the existing systems were failing. This isn't just about a market gap; it's about unlocking potential and fostering the next generation of skilled professionals. We built UCAS to bridge that divide, driven by a belief that the right connections can transform futures on both sides. The platform is live, and we are now scaling the tools on both sides of the match to fulfil that vision.</p>
+        </div>
+        <figure class="founder-story__image">
+          <img src="https://assets.website-files.com/64b5f83b12360b3ee42a201c/64e8e1957c742359483c65e2_Founder-image.jpeg" alt="A photo of the founder, a person in a smart-casual shirt, smiling and looking into the distance.">
+          <figcaption>Founder, Alex Smith</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 7. faq-accordion -->
+    <section class="faq-accordion">
+      <div class="container">
+        <h2 class="faq-accordion__title">Questions investors ask</h2>
+        <div class="faq-accordion__list">
+          <details class="faq-item">
+            <summary class="faq-item__question">Is the platform live or still in development?</summary>
+            <div class="faq-item__answer"><p>The marketplace is live. Students and employers are actively registering, and we are now scaling the tools on both sides based on early usage data.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">How do you make money?</summary>
+            <div class="faq-item__answer"><p>Employers pay to list and promote apprenticeship opportunities. Students use the platform at no cost. We are exploring premium employer tools as the next revenue layer.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">What is the total addressable market?</summary>
+            <div class="faq-item__answer"><p>There are over 200,000 apprenticeship starts in the UK each year, and employer demand consistently outpaces student awareness. Our target is the gap between those two figures.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">Who are your competitors?</summary>
+            <div class="faq-item__answer"><p>Existing job boards list apprenticeships alongside every other role. Government platforms exist but lack employer-side tooling. No one has built a dedicated marketplace connecting students and business owners directly.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">What traction do you have?</summary>
+            <div class="faq-item__answer"><p>The platform is live with employers and students actively using it. We share specific metrics and growth data in investor conversations.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">How do you acquire students?</summary>
+            <div class="faq-item__answer"><p>We work through schools, colleges, and careers services that already have student attention. The platform integrates with existing advisory workflows rather than competing with them.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">What does the capital go toward?</summary>
+            <div class="faq-item__answer"><p>Engineering to expand employer-side tooling, partnerships with careers services for student acquisition, and data infrastructure to improve matching accuracy.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__question">What is the long-term vision?</summary>
+            <div class="faq-item__answer"><p>To become the default place where UK students first encounter apprenticeships and where employers first look for apprentices — replacing fragmented job boards and government portals.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. cta-banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <!-- Fix #15: Removed em-dash for a colon -->
+        <p class="cta-banner__hook">See the deck and hear how we are closing the apprenticeship gap.</p>
+        <a href="#contact" class="btn btn--primary-on-dark">See the deck</a>
+      </div>
+    </section>
+
+    <!-- 9. contact-block -->
+    <section class="contact-block" id="contact">
+      <div class="container contact-block__inner">
+        <div class="contact-block__info">
+          <h2 class="contact-block__title">Get in touch</h2>
+          <p class="contact-block__email"><a href="mailto:hello@ucasmarketplace.co.uk">hello@ucasmarketplace.co.uk</a></p>
+          <p class="contact-block__hours">Mon–Fri, 9:00–17:00 (UK)</p>
+        </div>
+        <form class="contact-block__form" action="https://gitfoundry.co.uk/api/site-enquiry" method="POST">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <div class="form-field">
+            <label for="contact-name" class="form-label">Name</label>
+            <input id="contact-name" name="name" type="text" class="form-input" required>
+          </div>
+          <div class="form-field">
+            <label for="contact-email" class="form-label">Email</label>
+            <input id="contact-email" name="email" type="email" class="form-input" required>
+          </div>
+          <div class="form-field">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">U</span>
+          <span>UCAS</span>
+        </a>
+        <p>Connecting apprenticeships with the students who need them.</p>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>Built by <a href="https://gitfoundry.co.uk">GitFoundry</a></p>
+    </div>
+  </footer>
+</body>
+</html>
