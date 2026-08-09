@@ -1,0 +1,386 @@
+{
+  "iterations": [
+    {
+      "iteration": 1,
+      "findings": [
+        {
+          "file": "index.html",
+          "severity": "major",
+          "issue": "Repeated phrasing between the problem-solution section and the founder-story section: 'Too many students never hear about apprenticeships until it is too late' and 'Employers who offer [apprenticeships/them] struggle to reach the people who would benefit most' appear almost verbatim in both.",
+          "fix": "Rewrite the founder-story body so it builds on the problem rather than restating it identically, e.g. 'We started UCAS because careers advice still treats apprenticeships as a fallback, not a first choice. The marketplace is live, and we are now scaling the tools on both sides of the match.'",
+          "source": "text"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "issue": "Repeated phrase across sections: 'The platform is live, and we are now scaling the tools on both sides of the match.' appears in both the problem-solution answer and the founder-story body.",
+          "fix": "Vary the wording in the founder-story, e.g. 'The marketplace is already running with real students and employers; this raise funds the next layer of tools on both sides.'",
+          "source": "text"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "issue": "Multiple 'See the deck' CTAs across different sections (nav, hero, cta-banner) are repetitive and don't match a student/employer-facing tone.",
+          "fix": "Differentiate CTA labels by intent, e.g. nav: 'Contact us', hero: 'Explore the platform', cta-banner: 'Request a demo'.",
+          "source": "text"
+        },
+        {
+          "file": "index.html",
+          "severity": "minor",
+          "issue": "Title tag repeats the meta description phrasing almost exactly ('closing the gap between apprenticeships and students'), risking duplication in search results.",
+          "fix": "Use a distinct title, e.g. 'UCAS — Apprenticeship marketplace for UK students and employers'.",
+          "source": "text"
+        },
+        {
+          "file": "404.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: arial",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "hero-eyebrow-chip",
+          "issue": "Hero eyebrow / pill chip: eyebrow chip (tracked-caps) \"Apprenticeship marketplace · Live\" above h1 \"A marketplace closing the gap between apprenticeships and st\"",
+          "fix": "A tiny uppercase letter-spaced label sitting immediately above an oversized hero headline — or the same shape rendered as a pill chip — is now the default AI SaaS hero. Drop the eyebrow, integrate the kicker into the headline, or run it as a navigation breadcrumb instead.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 33 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"how-it-works\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"traction\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 47 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 51 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 57 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 47 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"founder-story\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"faq-accordion__list\": children flush against border-top on top (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "tight-leading",
+          "issue": "Tight line height: line-height 1.15x (need >=1.3)",
+          "fix": "Line height below 1.3x the font size makes multi-line text hard to read. Use 1.5 to 1.7 for body text so lines have room to breathe.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"contact-block\": children flush against border-top on top (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: inter",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: fraunces",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "em-dash-overuse",
+          "issue": "Em-dash overuse: 6 em-dashes in body text",
+          "fix": "More than two em-dashes (— or --) in body copy is an AI cadence tell. Use commas, colons, periods, or parentheses instead.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "minor",
+          "antipattern": "numbered-section-markers",
+          "issue": "Numbered section markers (01 / 02 / 03): Sequence: 01, 02, 03, 04",
+          "fix": "Numbered display markers as section labels (01, 02, 03) are the AI editorial scaffold one tier deeper than tracked eyebrow chips. If you find yourself reaching for them, choose a different section cadence.",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "layout-transition",
+          "issue": "Layout property animation: transition: width",
+          "fix": "Animating width, height, padding, or margin causes layout thrash and janky performance. Use transform and opacity instead, or grid-template-rows for height animations.",
+          "source": "detector"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "findings": [
+        {
+          "file": "index.html",
+          "severity": "major",
+          "issue": "The 'Founder Story' section (section 6) largely repeats the content from the 'Problem/Solution' section (section 2). Specifically, the core problem description and the solution statement are nearly identical in both sections.",
+          "fix": "Rewrite the 'Founder Story' content to offer a unique perspective, perhaps focusing on the personal motivation, journey, or specific challenges overcome during development, rather than reiterating the general problem and solution already presented in section 2. For example, 'Too many students never hear about apprenticeships until it is too late. Employers who offer them struggle to reach the people who would benefit most' and 'giving students clear, early visibility of real opportunities and giving business owners a direct route to motivated candidates. The platform is live, and we are now scaling the tools on both sides of the match' are almost direct copies. The founder story should deepen the narrative, not just repeat it.",
+          "source": "text"
+        },
+        {
+          "file": "404.html",
+          "severity": "major",
+          "antipattern": "hero-eyebrow-chip",
+          "issue": "Hero eyebrow / pill chip: eyebrow chip (tracked-caps) \"Error 404\" above h1 \"404\"",
+          "fix": "A tiny uppercase letter-spaced label sitting immediately above an oversized hero headline — or the same shape rendered as a pill chip — is now the default AI SaaS hero. Drop the eyebrow, integrate the kicker into the headline, or run it as a navigation breadcrumb instead.",
+          "source": "detector"
+        },
+        {
+          "file": "404.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: inter",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "404.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: fraunces",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "404.html",
+          "severity": "major",
+          "antipattern": "flat-type-hierarchy",
+          "issue": "Flat type hierarchy: Sizes: 12.5px, 15.2px, 16px, 16.8px (ratio 1.3:1)",
+          "fix": "Font sizes are too close together — no clear visual hierarchy. Use fewer sizes with more contrast (aim for at least a 1.25 ratio between steps).",
+          "source": "detector"
+        },
+        {
+          "file": "styles.css",
+          "severity": "major",
+          "antipattern": "low-contrast",
+          "issue": "Low contrast text (used on index.html): 3.8:1 (need 4.5:1) — text #718096 on #f7f8fa",
+          "fix": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "hero-eyebrow-chip",
+          "issue": "Hero eyebrow / pill chip: eyebrow chip (tracked-caps) \"Apprenticeship marketplace · Live\" above h1 \"A marketplace closing the gap between apprenticeships and st\"",
+          "fix": "A tiny uppercase letter-spaced label sitting immediately above an oversized hero headline — or the same shape rendered as a pill chip — is now the default AI SaaS hero. Drop the eyebrow, integrate the kicker into the headline, or run it as a navigation breadcrumb instead.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 33 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"problem-solution\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"how-it-works\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"features-list\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"traction\": children flush against border-bottom on bottom (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 47 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 51 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 57 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "all-caps-body",
+          "issue": "All-caps body text: text-transform: uppercase on 47 chars of body text",
+          "fix": "Long passages in uppercase are hard to read. We recognize words by shape (ascenders and descenders), which all-caps removes. Reserve uppercase for short labels and headings.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"founder-story\": children flush against border-bottom+bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <div> \"faq-accordion__list\": children flush against border-top on top (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"cta-banner\": children flush against bg on all sides (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "tight-leading",
+          "issue": "Tight line height: line-height 1.15x (need >=1.3)",
+          "fix": "Line height below 1.3x the font size makes multi-line text hard to read. Use 1.5 to 1.7 for body text so lines have room to breathe.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "cramped-padding",
+          "issue": "Cramped padding: <section> \"contact-block\": children flush against border-top on top (no inset)",
+          "fix": "Text is too close to the edge of its container. Two shapes: (1) an element with its own text where the padding is too low for the font size, and (2) a wrapper with text-bearing children and near-zero padding against a visible boundary (border, outline, or non-transparent background) — children land flush against the boundary line. Add at least 8px (ideally 12–16px) of padding inside bordered, outlined, or colored containers.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: inter",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "overused-font",
+          "issue": "Overused font: Primary font: fraunces",
+          "fix": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "major",
+          "antipattern": "em-dash-overuse",
+          "issue": "Em-dash overuse: 6 em-dashes in body text",
+          "fix": "More than two em-dashes (— or --) in body copy is an AI cadence tell. Use commas, colons, periods, or parentheses instead.",
+          "source": "detector"
+        },
+        {
+          "file": "index.html",
+          "severity": "minor",
+          "antipattern": "numbered-section-markers",
+          "issue": "Numbered section markers (01 / 02 / 03): Sequence: 01, 02, 03, 04",
+          "fix": "Numbered display markers as section labels (01, 02, 03) are the AI editorial scaffold one tier deeper than tracked eyebrow chips. If you find yourself reaching for them, choose a different section cadence.",
+          "source": "detector"
+        }
+      ]
+    }
+  ],
+  "generated": "2026-08-09T08:11:53.557Z"
+}
